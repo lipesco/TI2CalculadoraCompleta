@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculadora</title>
+</head>
+<body>
+    <div> 
+        <h1 style="color:red">Calculadora Completa</h1>
+        <!-- este objecto envia os dados do formulário para o servidor -->
+        <!-- este comentário aparece no cliente (browser) -->
+        @* mas este comentário já não aparece *@
+        <form method="post">
+            <table border="0">
+                <tr>
+                    <td colspan="5">
+                        <input type="text" name="visor" readonly="readonly" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="7" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="8" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="9" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value=":" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="+/-" name="bt" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="4" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="5" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="6" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="x" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="C" name="bt" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="1" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="2" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="3" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="-" name="bt" />
+                    </td>
+                    <td rowspan="2">
+                        <input type="submit" value="=" name="bt" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="0" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="," name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="+" name="bt" />
+                    </td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
